@@ -1,5 +1,5 @@
 
-FROM python:slim-bullseye
+FROM python:2
 
 WORKDIR /app
 
