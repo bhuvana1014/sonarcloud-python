@@ -1,4 +1,4 @@
-FROM python2:slim-bullseye
+FROM python:slim-bullseye
 
 COPY requirements.txt .
 
@@ -8,5 +8,5 @@ RUN pip install -r requirements.txt
 
 COPY . ./
 
-RUN python2 app.py
-CMD ["python2","app.py"]
+RUN python app.py
+CMD ["python","app.py"]
