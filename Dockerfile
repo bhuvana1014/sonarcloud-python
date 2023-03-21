@@ -11,4 +11,4 @@ RUN pip3 install -r requirements.txt
 COPY . ./
 
 RUN python app.py
-CMD ["python","server.py"]
+CMD ["python","app.py"]
