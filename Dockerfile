@@ -1,4 +1,4 @@
-FROM python3.6
+FROM python2
 
 COPY requirements.txt ./
 
@@ -8,5 +8,5 @@ RUN pip install -r requirements.txt
 
 COPY . ./
 
-RUN python app.py
-CMD ["python","app.py"]
+RUN python2 app.py
+CMD ["python2","app.py"]
