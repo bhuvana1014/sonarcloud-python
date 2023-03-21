@@ -10,6 +10,6 @@ RUN export UBER_CLIENT_SECRET="{DdrTIeaKPk_fSUlTO8ZjurkuKoTrCjx5N25qKcSh}"
 
 RUN pip install -r requirements.txt
 
-COPY src /app
+COPY /app
 
 CMD ["python","app.py"]
