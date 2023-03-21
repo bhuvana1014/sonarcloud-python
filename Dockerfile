@@ -13,6 +13,4 @@ RUN pip install -r requirements.txt
 
 COPY src /app
 
-RUN python app.py
-
 CMD ["python","app.py"]
