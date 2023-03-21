@@ -11,6 +11,6 @@ RUN pip3 install -r requirements.txt
 
 COPY src /app
 
-RUN python2 app.py
+RUN python app.py
 
-CMD ["python2","app.py"]
+CMD ["python","app.py"]
