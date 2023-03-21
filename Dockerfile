@@ -1,4 +1,4 @@
-FROM python2
+FROM python:2
 
 WORKDIR /app
 
