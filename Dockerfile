@@ -1,4 +1,4 @@
-FROM python:slim-bullseye
+FROM python2:slim-bullseye
 
 WORKDIR /app
 
@@ -11,6 +11,6 @@ RUN pip3 install -r requirements.txt
 
 COPY src /app
 
-RUN python app.py
+RUN python2 app.py
 
-CMD ["python","app.py"]
+CMD ["python2","app.py"]
