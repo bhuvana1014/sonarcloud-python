@@ -5,8 +5,8 @@ WORKDIR /app
 
 COPY  . .
 
-RUN export UBER_CLIENT_ID="{tnfP5KVp043mZTYsWPZNdFmIX28Mvic2}"
-RUN export UBER_CLIENT_SECRET="{DdrTIeaKPk_fSUlTO8ZjurkuKoTrCjx5N25qKcSh}"
+RUN export UBER_CLIENT_ID="{($env:user ID)}"
+RUN export UBER_CLIENT_SECRET="{($env:user password)}"
 
 RUN pip install -r requirements.txt
 
